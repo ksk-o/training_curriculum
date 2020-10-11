@@ -42,7 +42,6 @@ class CalendarsController < ApplicationController
       end
 
       days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans, wday: wdays[wday_num + x]} #wdaysから値を取り出し、日付に合わせて曜日を
-      days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans} #自分のメモ Issue1 キーをシンボル記法へ修正
 
       @week_days.push(days)
     end
